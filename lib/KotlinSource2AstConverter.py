@@ -26,7 +26,7 @@ class KotlinSource2AstConverter:
             with open(output_file + '.json', 'w') as f:
                 f.write(ast)
 
-            time_logger.finish('Parsing ' + str(params['counter']) + ' file')
+            time_logger.finish(task_name='Parsing ' + str(params['counter']) + ' file')
 
             params['counter'] += 1
 
