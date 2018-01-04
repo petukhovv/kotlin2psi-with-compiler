@@ -7,13 +7,11 @@ from .helpers.AstHelper import AstHelper
 
 
 class KotlinSource2AstConverter:
-    folder = 'ast'
-
     @staticmethod
     def convert(compiler_path, input_folder, output_folder):
         params = {'counter': 1}
 
-        def file_process(filename, params):
+        def file_process(filename):
             time_logger = TimeLogger()
             subprocess.call([compiler_path, filename])
 
@@ -28,8 +26,8 @@ class KotlinSource2AstConverter:
             with open(output_file + '.json', 'w') as f:
                 f.write(ast)
 
-            print(str(params['counter']) + ' parse completed. Parsing time:' + str(time_logger.finish()))
+            time_logger.finish('Parsing ' + str(params['counter']) + ' file')
 
             params['counter'] += 1
 
-        FilesWalker.walk(input_folder, lambda file: file_process(file, params))
+        FilesWalker.walk(input_folder, file_process)

@@ -20,4 +20,4 @@ time_logger = TimeLogger()
 
 KotlinSource2AstConverter.convert(compiler_path, input_folder, output_folder)
 
-print('Common time:' + str(time_logger.finish()))
+time_logger.finish(task_name='Parsing')
