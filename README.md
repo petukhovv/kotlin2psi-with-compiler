@@ -4,6 +4,7 @@ Program for parsing Kotlin source code.
 Program output — Kotlin AST.
 
 Program use custom version of Kotlin compiler (see [kotlin-academic](https://github.com/PetukhovVictor/kotlin-academic/tree/vp/ast_printing_text) repo).
+
 Kotlin compiler located in `./lib/kotlinc/`.
 
 ## Program arguments
