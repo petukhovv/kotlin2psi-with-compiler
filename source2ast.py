@@ -3,7 +3,7 @@ from .lib.helpers.TimeLogger import TimeLogger
 
 
 kt_code_temp_file = 'code.kt'
-compiler_path = './lib/kotlinc/bin/kotlinc'
+compiler_path = 'lib/kotlinc/bin/kotlinc'
 
 
 def source2ast(input_folder, output_folder):
