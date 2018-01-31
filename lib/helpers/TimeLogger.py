@@ -9,7 +9,9 @@ class TimeLogger:
 
     def finish(self, task_name):
         seconds = round(time.time() - self.start_time, self.accuracy)
-        print(task_name + ' finished. Time: ' + str(datetime.timedelta(seconds=seconds)))
+        print('-------------------')
+        print('%s finished. Time: %s' % (task_name, str(datetime.timedelta(seconds=seconds))))
+        print('-------------------')
 
     @staticmethod
     def _output(times, prefix, accuracy):
