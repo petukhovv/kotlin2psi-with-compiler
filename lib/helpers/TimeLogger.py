@@ -31,7 +31,6 @@ class TimeLogger:
     def console_output(times, prefix=None, accuracy=3):
         print(TimeLogger._output(times, prefix, accuracy))
 
-
     @staticmethod
     def file_output(filename, times, prefix=None, accuracy=3):
         with open(filename, 'a') as logfile:
