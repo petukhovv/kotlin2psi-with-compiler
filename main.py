@@ -5,7 +5,6 @@ from lib.helpers.TimeLogger import TimeLogger
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--compiler_path', '-c', nargs=1, type=str, help='path to custom version of kotlin compiler')
 parser.add_argument('--input_folder', '-i', nargs=1, type=str, help='folder with kotlin source codes')
 parser.add_argument('--output_folder', '-o', nargs=1, type=str, help='output folder with AST as JSON')
 
