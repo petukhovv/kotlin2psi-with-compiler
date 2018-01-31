@@ -1,5 +1,5 @@
-from lib.KotlinSource2AstConverter import KotlinSource2AstConverter
-from lib.helpers.TimeLogger import TimeLogger
+from .lib.KotlinSource2AstConverter import KotlinSource2AstConverter
+from .lib.helpers.TimeLogger import TimeLogger
 
 
 kt_code_temp_file = 'code.kt'
