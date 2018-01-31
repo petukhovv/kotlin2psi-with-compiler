@@ -12,7 +12,7 @@ class KotlinSource2AstConverter:
         params = {'counter': 1}
 
         def file_process(filename):
-            time_logger = TimeLogger()
+            time_logger = TimeLogger(task_name='Parsing %d file' % params['counter'])
             subprocess.call([compiler_path, filename])
 
             relative_filename = os.path.relpath(filename, input_folder)
@@ -26,7 +26,7 @@ class KotlinSource2AstConverter:
             with open(output_file + '.json', 'w') as f:
                 f.write(ast)
 
-            time_logger.finish(task_name='Parsing ' + str(params['counter']) + ' file')
+            time_logger.finish()
 
             params['counter'] += 1
 
