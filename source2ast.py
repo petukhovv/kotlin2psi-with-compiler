@@ -14,4 +14,4 @@ def source2ast(input_folder, output_folder):
 
     KotlinSource2AstConverter.convert(compiler_path, input_folder, output_folder)
 
-    time_logger.finish(task_name='Parsing')
+    time_logger.finish(task_name='Parsing', full_finish=True)
