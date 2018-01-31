@@ -7,11 +7,13 @@ class TimeLogger:
         self.start_time = time.time()
         self.accuracy = accuracy
 
-    def finish(self, task_name):
+    def finish(self, task_name, full_finish=False):
         seconds = round(time.time() - self.start_time, self.accuracy)
-        print('-------------------')
+        if full_finish:
+            print('-------------------')
         print('%s finished. Time: %s' % (task_name, str(datetime.timedelta(seconds=seconds))))
-        print('-------------------')
+        if full_finish:
+            print('-------------------')
 
     @staticmethod
     def _output(times, prefix, accuracy):
