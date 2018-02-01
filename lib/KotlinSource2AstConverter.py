@@ -26,4 +26,4 @@ class KotlinSource2AstConverter:
 
             time_logger.finish()
 
-        FilesWalker.walk(input_folder, file_process)
+        FilesWalker.walk(input_folder, file_process, extension='kt')
