@@ -20,7 +20,7 @@ class KotlinSource2AstConverter:
         def file_process(filename):
             files_info['current'] += 1
 
-            time_logger = TimeLogger(task_name='Parsing %d of %d file: %s'
+            time_logger = TimeLogger(task_name='Parsing %d of %d: %s'
                                                % (files_info['current'], files_info['all'], filename))
             subprocess.call([compiler_path, filename])
 
