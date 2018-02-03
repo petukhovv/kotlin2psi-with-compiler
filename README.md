@@ -1,7 +1,7 @@
 # kotlin-source2ast
 
 Program for parsing Kotlin source code.
-Program output — Kotlin AST.
+Program output — Kotlin CST (concrete syntax tree).
 
 Program use custom version of Kotlin compiler (see [kotlin-academic](https://github.com/PetukhovVictor/kotlin-academic/tree/vp/ast_printing_text) repo).
 
@@ -10,7 +10,7 @@ Kotlin compiler located in `./lib/kotlinc/`.
 ## Program arguments
 
 - **--input (-i)**: folder with kotlin source codes (for example, obtained by [github-kotlin-code-collector](https://github.com/PetukhovVictor/github-kotlin-code-collector))
-- **--output (-o)**: output folder with AST (in JSON format)
+- **--output (-o)**: output folder with CST (in JSON format)
 
 Example of use:
 ```
@@ -19,7 +19,7 @@ python3 main.py -i ./code -o ./ast
 
 ## Output
 
-Program output is Kotlin AST in JSON format.
+Program output is Kotlin CST in JSON format.
 
 Example:
 ```
