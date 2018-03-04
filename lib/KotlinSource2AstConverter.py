@@ -8,7 +8,7 @@ from .helpers.AstHelper import AstHelper
 
 class KotlinSource2AstConverter:
     @staticmethod
-    def convert(compiler_path, input_folder, output_folder):
+    def convert(compiler_path, input_folder, output_folder, with_code):
         files_info = {
             'all': 0,
             'current': 0
@@ -30,7 +30,7 @@ class KotlinSource2AstConverter:
             if not os.path.exists(file_folder):
                 os.makedirs(file_folder)
 
-            ast = AstHelper.text2json('ast.data')
+            ast = AstHelper.text2json('ast.data', with_code)
 
             with open(output_file + '.json', 'w') as f:
                 f.write(ast)
