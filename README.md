@@ -9,8 +9,8 @@ Kotlin compiler located in `./lib/kotlinc/`.
 
 ## Program arguments
 
-- **--input (-i)**: folder with kotlin source codes (for example, obtained by [github-kotlin-code-collector](https://github.com/PetukhovVictor/github-kotlin-code-collector))
-- **--output (-o)**: output folder with CST (in JSON format)
+- `--input`, `-i`: folder with kotlin source codes (for example, obtained by [github-kotlin-code-collector](https://github.com/PetukhovVictor/github-kotlin-code-collector))
+- `--output`, `-o`: output folder with CST (in JSON format)
 
 Example of use:
 ```
