@@ -1,7 +1,7 @@
-# kotlin-source2ast
+# kotlin2psi
 
 Program for parsing Kotlin source code.
-Program output — Kotlin CST (concrete syntax tree).
+Program output — Kotlin CST (concrete syntax tree; also referred to in intellij platform as PSI).
 
 Program use custom version of Kotlin compiler (see [kotlin-academic](https://github.com/PetukhovVictor/kotlin-academic/tree/vp/ast_printing_text) repo).
 
