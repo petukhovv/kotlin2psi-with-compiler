@@ -1,5 +1,9 @@
 # kotlin2psi
 
+**This tool is outdated. You can get PSI directly from custom version of Kotlin compiler ([kotlin-academic](https://github.com/PetukhovVictor/kotlin-academic))**
+
+---------------------------------------------
+
 Program for parsing Kotlin source code.
 Program output — Kotlin CST (concrete syntax tree; also referred to in intellij platform as PSI).
 
