@@ -27,7 +27,7 @@ python3 main.py -i ./code -o ./ast
 Program output is Kotlin CST in JSON format.
 
 Example (if `--with_code` specified):
-```
+```json
 [
    {
       "type":"FILE",
